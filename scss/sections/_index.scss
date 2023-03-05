@@ -1,0 +1,38 @@
+/* Hoja de inicio */
+
+.container-inicio {
+    min-height: 100vh;
+    background-image: url(../recursos/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.titulo-inicio {
+    color: #ff3366;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 12.5rem;
+    display: inline-block;
+    font-family: $typo-principal;
+
+}
+
+.subtitulo-inicio {
+    padding: 0px;
+    color: #2ec4b6;
+    font-weight: 400;
+    display: inline-block;
+    font-family: $typo-principal;
+}
+
+.pequeño-titulo-inicio {
+    font-weight: bold; 
+    display: inline-block;
+    font-family: $typo-principal;
+}

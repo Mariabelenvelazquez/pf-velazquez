@@ -1,0 +1,138 @@
+/* Hoja Contacto */
+
+formato-titulos {
+    text-align: center;
+    display: block;
+    font-family: $typo-principal;
+}
+
+.titulo-inicio {
+    @extend formato-titulos;
+    text-transform: uppercase;
+}
+
+.container-form {
+    background-color: $color-oscuro;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+}
+
+.subtitulo-contacto {
+   color: $color-claro;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+form {
+    width: 400px;
+    margin: auto;
+    border: rgb(112, 171, 248);
+    padding: 10px 10px;
+    margin-top: 20px;
+    font-family: $typo-secundaria;
+    box-shadow: 0px 2px 10px 5px rgb(136, 182, 219);
+    border-radius: 5px;
+
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+
+}
+
+
+
+.boton {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    position: relative;
+    font-size: 17px;
+    background-color: $verde;
+    border: none;
+    color: $color-claro;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.boton:hover {
+    color: $color-claro;
+    background-color: $azul;
+}
+
+
+@media (max-width: 789px) {
+    form {
+        width: 50%;
+        margin: auto;
+        border: rgb(112, 171, 248);
+        padding: 10px 10px;
+        margin-top: 20px;
+        font-family: $typo-secundaria;
+        box-shadow: 0px 2px 10px 5px rgb(136, 182, 219);
+        border-radius: 5px;
+    }
+
+    .container-form {
+
+        h2,
+        h5 {
+            color: $color-claro;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: smaller;
+        }
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 12px;
+        border: none;
+
+    }
+
+    @media (max-width:500px) {
+
+        .boton {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: .625rem;
+            transition: 0.5s;
+            position: relative;
+            font-size: .5rem;
+            background-color: $verde;
+            border: none;
+            color: $color-claro;
+            margin-top: .625rem;
+            box-sizing: border-box;
+            border-radius: .1875rem;
+        }
+    }
+
+}

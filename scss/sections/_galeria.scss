@@ -1,0 +1,61 @@
+/* Hoja galeria */
+img{
+    width: 100%;
+}
+
+.formato-titulos{
+    text-align: center;
+    display: block;
+    font-family: $typo-principal;
+    text-transform: uppercase;
+} 
+
+.row{ 
+    display: flex;
+    padding: .3125rem;
+    flex-wrap: wrap;
+    h1 { @extend .formato-titulos;
+    padding-top: 9.375rem;
+    display: inline-block;
+    color: $rojo;
+    font-weight: 400;
+}
+}
+
+.column{
+    flex: 25%;
+    padding: .3125rem;
+    img{
+    margin-top: .3125rem;
+}
+
+}
+
+
+@media (max-width: 792px){
+    .row h1{
+        padding-top: 9.375rem;
+        display: inline-block;
+        color: $rojo;
+    }
+    
+    .column{
+        flex: 50%;
+        padding: .3125rem;
+    }
+}
+
+@media (max-width: 500px){
+    .row h1{
+        padding-top: 9.375rem;
+        display: inline-block;
+        color: $rojo;
+        font-weight: 400;
+        font-size: 1.25rem;
+    }
+    .column{
+        flex: 100%;
+        padding:.3125rem;
+    }
+
+}

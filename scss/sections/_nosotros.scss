@@ -1,0 +1,106 @@
+//Hoja Nosotros
+
+img {
+    width: 100%;
+}
+
+.formato-titulos{
+    display: block;
+    font-family: $typo-principal;
+    text-transform: uppercase;
+} 
+
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        @extend .formato-titulos;
+        padding-top: 6.25rem;
+        padding-bottom: 6.25rem;
+        display: inline-block;
+        color: $rojo;
+        font-weight: 400;
+        margin-top: 6.25rem;
+
+    }
+}
+
+.column-nosotros {
+    padding: .3125rem;
+    display: flex;
+
+    img {
+        width: 300px;
+    }
+
+    p {
+        display: inline-flex;
+        text-align: justify;
+        margin: 20px;
+
+    }
+}
+
+@mixin color-subtitulos ($color) {
+    color: $verde;
+    padding: 20px;
+    font-family: $typo-principal;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+.subtitulos-nosotros {
+    @include color-subtitulos ($azul);
+ }
+
+
+
+@media (max-width: 792px) {
+    .nosotros h1 {
+        padding-top: 110px;
+        display: inline-block;
+        color: $rojo;
+    }
+
+    .column-nosotros {
+        flex: 100%;
+        padding: .3125rem;
+        flex-direction: column;
+        align-items: center;
+
+
+        img {
+            display: 100%;
+
+        }
+    }
+
+}
+
+@media (max-width: 500px) {
+    .nosotros h1 {
+        padding-top: 110px;
+        display: inline-block;
+        color: $rojo;
+        font-weight: 400;
+        font-size: 1.25rem;
+    }
+
+    .column-nosotros {
+        flex: 100%;
+        padding: .3125rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column-nosotros img {
+        display: 100%;
+
+    }
+
+}

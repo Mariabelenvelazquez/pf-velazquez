@@ -1,0 +1,142 @@
+///* Barra de navegación *///
+
+
+.navbar{
+    background-color: $color-oscuro !important;
+    color: $color-claro!important;
+    text-decoration: none;
+   
+      
+}
+
+.navbar-toggler{
+    background-color: $azul;
+    border-color: $verde;
+    color: $color-claro;
+  
+}
+
+.nav-enlace{
+    color: $color-claro;
+    font-family: $typo-principal;
+}
+
+.nav-enlace:hover {
+    background: $rojo;
+}
+
+.nombre-escuela{
+    color:$color-claro;
+    font-size: 14px;
+    font-weight:400;
+    font-family: $typo-principal;
+    
+    
+}
+
+/* ANIMACION */
+.nombre-escuela {
+    animation-name: movimiento;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes movimiento {
+    0% {}
+
+    10% {
+        color: #011627;
+        transform: translateX(.3125rem);
+    }
+
+    20% {
+        color: #011627;
+        trasmform: traslateX(1.25rem)
+    }
+
+    30% {
+        color: #f6f7f8;
+        transform: translateX(2.5rem);
+    }
+
+    60% {
+        color: #f6f7f8;
+        transform: traslateX(3.75rem);
+    }
+
+}
+
+
+@media only screen and (min-width: 790px) {
+    .animate__animated.animate__zoomIn {
+        animation-duration: 6s;
+    }
+
+    .pequeño-titulo-inicio {
+        font-weight: bold;
+        text-align: center;
+        color: $azul;
+    
+    
+    }
+
+  }
+
+
+@media (max-width: 789px) {
+
+    .navbar{ 
+        font-size: .625rem;
+        background: transparent;
+
+    
+    }
+    
+      .titulo-inicio {
+        color: $rojo;
+        font-size: .875rem;
+        display: inline-block;
+    
+    }
+    
+    .subtitulo-inicio {
+        padding: 0px;
+        color: $verde;
+        font-weight: 400;
+        font-size: .625rem;
+    }
+    
+    .pequeño-titulo-inicio {
+        font-weight: bold;
+        font-size: 0.625rem;
+    }
+
+}
+
+@media (max-width:500px) {
+    .navbar{ 
+        font-size: .625rem;
+    }
+
+    .titulo-inicio {
+        color: $rojo;
+        font-weight: 600;
+       font-size: .6875rem;
+        display: inline-block;
+    
+    }
+    
+    .subtitulo-inicio {
+        padding: 0px;
+        color: $verde;
+        font-size: .625rem;
+        display: inline-block;
+    }
+    
+    .pequeño-titulo-inicio {
+        font-size: small;
+        display: inline-block;
+    }
+       
+    }
